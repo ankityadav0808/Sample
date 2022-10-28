@@ -1,0 +1,51 @@
+:root{
+    font-size: 20px;
+}
+.lable{
+    width: 30%;
+}
+.information{
+    width: 40%;
+}
+
+#cancel{
+    height:4em;
+    width: 10em;
+    border-radius: 1em;
+    margin: 3em;
+   
+}
+#next{
+    height:4em;
+    width: 15em;
+    border-radius: 1em;
+}
+#do_you_want{
+    width: 80%;
+}
+.lable label{
+    font-weight: 500;
+}
+
+input[type="text"],select,input[type="date"],input[type="password"]{
+    width: 100%;
+    height: 3em;
+}
+.err_msg label{
+    color: red;
+}
+.err_msg{
+    width: 30%;
+    margin-left: 2em;
+}
+
+.admin_pannel{
+    position: absolute;
+    right: 35%;
+}
+#admin_login{
+    background-color: rgb(82, 82, 82);
+    color: white;
+    font-size: 1.5em;
+}
+

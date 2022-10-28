@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Passport Seva</h1>
+
+        <div class="admin_pannel">
+            <input type="button" value="Login" id="admin_login">
+        </div>
+
+        <form action="../27_oct_small_assignment/passposr_data.html">
+
+       
+
+        <div class="apply_at d-flex my-3">
+            <div class="lable">
+                <label for="select_apply_at[]">Register to Apply At</label>
+                <span class="text-danger">*</span>
+            </div>
+            <div class="information">
+                <input type="radio" name="select_apply_at" id="cpv_delhi" value="CPV Delhi">
+                <label for="cpv_delhi">CPV Delhi</label><br>
+                <input type="radio" name="select_apply_at" id="passport_office" checked value="Passport Office">
+                <label for="passport_office">Passport Office</label>
+            </div>
+            <div class="err_msg">
+                <label id="select_apply_at-error" class="error" for="select_apply_at"></label>
+
+            </div>
+        </div>
+
+
+        <div class="office_selection d-flex my-3">
+            <div class="lable">
+                <label for="passport_office_option">Passport Office</label>
+                <span class="text-danger">*</span>
+                <p>(As per Present Residental Address)</p>
+            </div>
+            <div class="information">
+                <select class=" select-input common-input" id="passport_office_option" name="passport_office_option" >
+                    <option selected value="">-------select------</option>
+                    <option value="Thane">Thane</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <div class="err_msg">
+                <label id="passport_office_option-error" class="error" for="passport_office_option"></label>
+
+            </div>
+        </div>
+
+
+        <div class="first_name d-flex my-3">
+            <div class="lable d-flex">
+                <label for="given_name">Given Name &nbsp</label>
+                <p>(Max 20 Characters)</p>
+                <span class="text-danger">*</span>
+            </div>
+            <div class="information">
+                <input type="text" name="given_name" id="given_name" placeholder="Enter Name">
+            </div>
+            <div class="err_msg">
+                <label id="given_name-error" class="error" for="given_name"></label>
+
+            </div>
+        </div>
+
+        <div class="surname d-flex my-3">
+            <div class="lable d-flex">
+                <label for="surname">Surname &nbsp</label>
+                <p>(Max 20 Characters)</p>
+            </div>
+            <div class="information">
+                <input type="text" name="surname" id="surname" placeholder="Enter Surname">
+            </div>
+            <div class="err_msg">
+                <label id="surname-error" class="error" for="surname"></label>
+            </div>
+        </div>
+
+
+        <div class="date_of_birth d-flex my-3">
+            <div class="lable d-flex">
+                <label for="dob">Date of Birth (DD/MM/YYYY) </label>
+                <span class="text-danger">*</span>
+            </div>
+            <div class="information">
+                <input type="text" name="dob" id="dob" placeholder="Enter DOB- DD/MM/YYYY">
+            </div>
+            <div class="err_msg">
+                <label id="dob-error" class="error" for="dob"></label>
+            </div>
+        </div>
+
+        <div class="email d-flex my-3">
+            <div class="lable d-flex">
+                <label for="email_id">E-mail Id &nbsp</label>
+                <p>(Max 35 Characters)</p>
+                <span class="text-danger">*</span>
+            </div>
+            <div class="information">
+                <input type="text" name="email_id" id="email_id" placeholder="Enter Email Id">
+            </div>
+            <div class="err_msg">
+                <label id="email_id-error" class="error" for="email_id"></label>
+
+            </div>
+        </div>
+
+        <div class="login_id_choice d-flex my-3">
+            <div class="lable">
+                <label for="login_option" id="do_you_want">Do you want your Login Id  to be same as E-mail Id</label>
+            </div>
+            <div class="information">
+                <input type="radio" name="login_option" id="yes_op" value="Yes">
+                <label for="yes_op">Yes</label>
+                <input type="radio" name="login_option" id="no_op " checked value="No">
+                <label for="no_op">No</label>
+            </div>
+            <div class="err_msg">
+                <label id="login_option-error" class="error" for="login_option"></label>
+            </div>
+        </div>
+
+        <div class="login_id d-flex my-3">
+            <div class="lable d-flex">
+                <label for="dob">Login Id </label>
+                <span class="text-danger">*</span>
+            </div>
+            <div class="information">
+                <input type="text" name="login_id" id="login_id" placeholder="Enter Login Id">
+            </div>
+            <div class="err_msg">
+                <label id="login_id-error" class="error" for="login_id"></label>
+            </div>
+        </div>
+
+        <div class="pswd d-flex my-3">
+            <div class="lable d-flex">
+                <label for="pswd">Password </label>
+                <span class="text-danger">*</span>
+            </div>
+            <div class="information">
+                <input type="password" name="pswd" id="pswd" placeholder="Enter Password">
+            </div>
+            <div class="err_msg">
+                <label id="pswd-error" class="error" for="pswd"></label>
+            </div>
+        </div>
+        <div class="cnf_pswd d-flex my-3">
+            <div class="lable d-flex">
+                <label for="cnf_pswd">Confirm Password Id </label>
+                <span class="text-danger">*</span>
+            </div>
+            <div class="information">
+                <input type="password" name="cnf_pswd" id="cnf_pswd" placeholder="Enter Same password Again">
+            </div>
+            <div class="err_msg">
+                <label id="cnf_pswd-error" class="error" for="cnf_pswd"></label>
+            </div>
+        </div>
+
+        <div class="submission">
+            <button type="reset" id="cancel" class="bg-secondary">Cancel</button>
+            <button type="submit" id="next" class="bg-success">Next</button>
+        </div>
+    </form>
+    </div>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="additional-methods.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

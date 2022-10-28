@@ -1,0 +1,8 @@
+tbody td,thead th{
+    border: 2px solid rgb(118, 114, 114);
+}
+thead tr{
+    background-color: rgb(114, 120, 125);
+    font-weight: bold;
+
+}
